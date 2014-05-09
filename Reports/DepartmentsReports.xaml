@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="UserRegister.Reports.DepartmentsReport"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+            
+      IsVisibleChanged="VisitationReport_OnIsVisibleChanged"
+      d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel Background="#EEF5FD">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Label>Report interval:</Label>
+            <ComboBox SelectedIndex="0">
+                <ComboBoxItem>All time</ComboBoxItem>
+                <ComboBoxItem>Year</ComboBoxItem>
+                <ComboBoxItem>Month</ComboBoxItem>
+                <ComboBoxItem>Week</ComboBoxItem>
+                <ComboBoxItem>Day</ComboBoxItem>
+                <ComboBoxItem>Hour</ComboBoxItem>
+                <ComboBoxItem>Minute</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <DocumentViewer Name="documentViewer" />
+    </DockPanel>
+</UserControl>

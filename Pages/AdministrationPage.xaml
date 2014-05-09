@@ -1,0 +1,44 @@
+﻿<Page x:Class="UserRegister.Pages.AdministrationPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:adm="clr-namespace:UserRegister.Administration"
+      xmlns:administration="clr-namespace:UserRegister.Pages.Administration"
+      xmlns:reports="clr-namespace:UserRegister.Reports"
+      Title="Administration Window">
+    <TabControl>
+        <TabItem Header="Watch list">
+            <administration:WatchList />
+        </TabItem>
+        <TabItem Header="Add new user">
+            <ContentControl Width="250" Height="100">
+                <adm:AddNewUser />
+            </ContentControl>
+        </TabItem>
+        <TabItem Header="Features">
+            <ContentControl Width="250" Height="100">
+                <adm:Features />
+            </ContentControl>
+        </TabItem>
+
+        <TabItem Header="Reports">
+            <TabControl>
+                <TabItem Header="Wait time">
+                    <reports:WaitTimeReport />
+                </TabItem>
+
+                <TabItem Header="Language selection">
+                    <reports:LanguageSelectionReport />
+                </TabItem>
+
+                <TabItem Header="Visitations">
+                    <reports:VisitationReport />
+                </TabItem>
+
+                <TabItem Header="Departments">
+                    <reports:DepartmentsReport />
+                </TabItem>
+            </TabControl>
+        </TabItem>
+
+    </TabControl>
+</Page>
