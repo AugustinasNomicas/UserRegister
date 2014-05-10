@@ -10,14 +10,10 @@
             <administration:WatchList />
         </TabItem>
         <TabItem Header="Add new user">
-            <ContentControl Width="250" Height="100">
                 <adm:AddNewUser />
-            </ContentControl>
         </TabItem>
         <TabItem Header="Features">
-            <ContentControl Width="250" Height="100">
                 <adm:Features />
-            </ContentControl>
         </TabItem>
 
         <TabItem Header="Reports">

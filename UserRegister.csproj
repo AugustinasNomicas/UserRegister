@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CodeReason.Reports">
-      <HintPath>D:\Tmp\Reporting\CodeReason.Reports\bin\Debug\CodeReason.Reports.dll</HintPath>
+      <HintPath>Dependencies\CodeReason.Reports.dll</HintPath>
     </Reference>
     <Reference Include="ReachFramework" />
     <Reference Include="System" />
@@ -52,7 +52,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="WpfKb">
-      <HintPath>D:\Tmp\WpfKb.0.1.0.0-bin\WpfKb.dll</HintPath>
+      <HintPath>Dependencies\WpfKb.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helpers\DropShadowChrome.cs" />
     <Compile Include="Pages\AdministrationPage.xaml.cs">
       <DependentUpon>AdministrationPage.xaml</DependentUpon>
     </Compile>
